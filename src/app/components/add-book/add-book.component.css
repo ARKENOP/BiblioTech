@@ -40,6 +40,7 @@ input {
   font-size: 1rem;
   transition: all 0.3s ease;
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -76,6 +77,37 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
   transform: translateY(1px);
+}
+
+.back-button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+  background-color: #303f9f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-1px);
+}
+
+.back-button:active {
+  transform: translateY(1px);
+}
+
+.back-button i {
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {

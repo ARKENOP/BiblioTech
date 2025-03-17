@@ -1,0 +1,77 @@
+/* Container for the list of books */
+.books-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f6fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual book card */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Book information */
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Book actions */
+.book-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book-actions button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-actions button:hover {
+  background-color: #2980b9;
+}
+
+/* No books message */
+.no-books {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+button[routerLink="/books/add"] {
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+button[routerLink="/books/add"]:hover {
+  background-color: #27ae60;
+}
